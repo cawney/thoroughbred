@@ -11,41 +11,43 @@ Might need to change this to an input field later on. Need to make it work flawl
 
 */
 
-$(".pedigree").hide();
-
-
-
-
 $("#run").click( function(){
 
 	var textString = textFile.responseText;
 	//var newDiv = document.createElement("div");
 	console.log("Begin");
-	$(".pedigree").show();
-	//$(".pedigreeAlt").append(textString);
-
 	var lines = textString.split('\\' | "\n");
-	var bold = textString.split("\b" | "\n");
-	for(var line = 0; line < lines.length; line++){
-
-		var l = lines[line];
-	console.log(l); //Puts one line of the source
-
+	/*
+	This looks for the \ and splits it up into a line of itself.
+	I need to do this for all the other sections or find a better
+	way to split it up.
+	*/
 	
+		
+	for(var line = 0; line < lines.length; line++){
+		var l = lines[line];	
+		var listHTML = "<p>" + l + "</p>";
+		
 
+		console.log(l); //Puts one line of the source
+		
+		//$('.pedigree').append(listHTML); //Writes every line in a <p> tag by itself
+		
+		document.write(listHTML);
 
-
-
-	$('.pedigree').append("<p>" + l + "</p>"); //Writes every line in a <p> tag by itself
+		
 	// Need to make some if then statements and logic to pull out the bold codes and the endent codes, etc.
-	} //Enddfd for loop
+	} //End for loop
 
+
+	//console.log(listHTML);
 
 
 	console.log("End");
 
 
 });
+
 
 $("#runAlt").click( function(){
 
