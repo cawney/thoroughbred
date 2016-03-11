@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Thoroughbred Racing Results</title>
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<div class="wrapper">
@@ -33,10 +34,20 @@
 					<th>$790,000</th>
 					<th>86%</th>
 					<th>7</th>
-					<th>100%</th>
+					<th>100%
+					</th>
 				</tr>
 			</tbody>
 		</table>
-	</div>
+		<a href="test.php">This is a test</a>
+		<p><a href="reducer.html">Reduce the text!</a></p>
+		<p><a href="file-reader.html">File reader</a></p>
+		<div id="images"></div>
+		<div class="results"></div>
+	</div> <!-- /.wrapper -->
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+	<script src="js/min/awesome-min.js"></script>
+
 </body>
 </html>
