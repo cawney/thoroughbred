@@ -3,7 +3,7 @@ Text Parser
 **************************************/
 
 
-var textFile = $.get('http://localhost/~jamescarney/thoroughbred/assets/pedigree.rtf'); //Get the file that needs to be parsed
+var textFile = $.get('/assets/pedigree.rtf'); //Get the file that needs to be parsed
 
 /*
 
